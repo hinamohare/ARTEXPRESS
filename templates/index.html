@@ -1,0 +1,25 @@
+
+{% extends "layout.html" -%}
+
+
+
+{% block content -%}
+
+{% autoescape false %}
+<div class="w3-row w3-grayscale-min" style="margin-top:100px; padding-left: 25px;">
+{% if username %}
+  <h3 class="title">Hello {{ username }}!</h3>
+{% else %}
+  <h1></h1>
+{% endif %}
+</div>
+{% endautoescape %}
+
+{% include "partials/index.html" %}
+
+{%- endblock content %}
+
+
+
+
+
